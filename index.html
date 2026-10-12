@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Mohammed Mikhdad | AI/ML & Data Analytics Portfolio</title>
+  <meta name="title" content="Mohammed Mikhdad | AI/ML & Data Analytics Portfolio">
+  <meta name="description" content="Personal portfolio of Mohammed Mikhdad, an MCA student at Yenepoya University specializing in AI/ML, Deep Learning, NLP, and Data Analytics.">
+  <meta name="keywords" content="Mohammed Mikhdad, AI, Machine Learning, Deep Learning, NLP, Data Analytics, Python, OpenCV, MediaPipe, Yenepoya University, Portfolio">
+  <meta name="author" content="Mohammed Mikhdad">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-github-username.github.io/">
+  <meta property="og:title" content="Mohammed Mikhdad | AI/ML & Data Analytics Portfolio">
+  <meta property="og:description" content="Portfolio of Mohammed Mikhdad — MCA student at Yenepoya University specializing in AI/ML, Deep Learning, NLP, and Data Analytics.">
+  <meta property="og:image" content="assets/og-preview.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Mohammed Mikhdad | AI/ML & Data Analytics Portfolio">
+  <meta property="twitter:description" content="Portfolio of Mohammed Mikhdad — MCA student at Yenepoya University specializing in AI/ML, Deep Learning, NLP, and Data Analytics.">
+
+  <!-- Favicon (SVG Data URI for zero external dependencies) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='50%25' stop-color='%23818cf8'/%3E%3Cstop offset='100%25' stop-color='%23c084fc'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%230b0f19'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-weight='bold' font-size='15' fill='url(%23g)' text-anchor='middle'%3EMM%3C/text%3E%3C/svg%3E">
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Skip Link for Keyboard Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Mohammed Mikhdad Home">
+        <span class="logo-badge">MM</span>
+        <span class="logo-text">Mohammed <span class="accent-text">Mikhdad</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Journey</a></li>
+          <li class="nav-item"><a href="#github" class="nav-link">GitHub</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="icon-btn theme-toggle" aria-label="Toggle light and dark mode" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Button -->
+        <a href="#resume-modal" class="btn btn-sm btn-outline resume-btn" id="resume-btn" aria-label="Open or download resume">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menu-toggle" class="icon-btn mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="ambient-glow glow-cyan" aria-hidden="true"></div>
+      <div class="ambient-glow glow-violet" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge reveal-item">
+            <span class="pulse-indicator"></span>
+            <span>MCA @ Yenepoya University &bull; Seeking AI/ML Roles</span>
+          </div>
+
+          <h1 class="hero-title reveal-item">
+            Hello, I'm <br>
+            <span class="gradient-text hero-name">Mohammed Mikhdad</span>
+          </h1>
+
+          <div class="hero-typewriter reveal-item" aria-live="polite">
+            <span class="type-prefix">Specializing in </span>
+            <span id="typewriter-text" class="type-dynamic"></span>
+            <span class="cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-description reveal-item">
+            Postgraduate scholar in Computer Applications with a dedicated focus on <strong>Deep Learning</strong>, 
+            <strong>Computer Vision</strong>, <strong>NLP</strong>, and <strong>Data Analytics</strong>. 
+            Passionate about transforming multidimensional raw data into production-grade predictive intelligence and assistive healthcare tools.
+          </p>
+
+          <div class="hero-actions reveal-item">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Get In Touch</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Quick Highlights Bar -->
+          <div class="hero-stats reveal-item">
+            <div class="stat-pill">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Core AI/ML Projects</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-pill">
+              <span class="stat-number">MCA</span>
+              <span class="stat-label">Yenepoya University</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-pill">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Vanilla & Clean Code</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-item" aria-hidden="true">
+          <div class="visual-card-glass">
+            <div class="code-terminal-header">
+              <span class="term-dot red"></span>
+              <span class="term-dot yellow"></span>
+              <span class="term-dot green"></span>
+              <span class="term-title">mikhdad@deeplearning:~$</span>
+            </div>
+            <div class="code-terminal-body">
+              <p><span class="code-keyword">import</span> torch</p>
+              <p><span class="code-keyword">from</span> yenepoya_mca <span class="code-keyword">import</span> Scholar</p>
+              <p><br></p>
+              <p><span class="code-comment"># Initialize profile</span></p>
+              <p>engineer = Scholar(</p>
+              <p>&nbsp;&nbsp;name=<span class="code-string">"Mohammed Mikhdad"</span>,</p>
+              <p>&nbsp;&nbsp;focus=[<span class="code-string">"AI/ML"</span>, <span class="code-string">"Deep Learning"</span>, <span class="code-string">"CV"</span>, <span class="code-string">"NLP"</span>],</p>
+              <p>&nbsp;&nbsp;status=<span class="code-string">"Building impactful models"</span>,</p>
+              <p>&nbsp;&nbsp;ready_for_collaboration=<span class="code-bool">True</span></p>
+              <p>)</p>
+              <p><br></p>
+              <p>model = engineer.train_vision_system()</p>
+              <p><span class="code-output">>>> Accuracy: 98.4% | Loss: 0.042</span></p>
+              <p><span class="code-output">>>> Pipeline Status: Optimized</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll down to About section">
+        <span>Scroll Down</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-tag">01. Discovery</span>
+          <h2 class="section-title">About <span class="gradient-text">Mohammed Mikhdad</span></h2>
+          <p class="section-subtitle">Bridging theoretical mathematics with production-grade AI & Data Analytics architectures.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Profile Card -->
+          <div class="about-profile-card glass-panel reveal-item">
+            <div class="avatar-wrapper">
+              <div class="avatar-glow"></div>
+              <div class="avatar-placeholder" aria-label="Mohammed Mikhdad Profile Graphic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="avatar-icon">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <span class="avatar-badge" title="AI/ML Specialized">AI &bull; ML</span>
+            </div>
+
+            <h3 class="profile-name">Mohammed Mikhdad</h3>
+            <p class="profile-role">MCA Candidate &bull; AI/ML Specialist</p>
+            <p class="profile-org">Yenepoya (Deemed to be University)</p>
+
+            <ul class="profile-info-list">
+              <li>
+                <span class="info-label">Degree</span>
+                <span class="info-val">Master of Computer Applications</span>
+              </li>
+              <li>
+                <span class="info-label">Institution</span>
+                <span class="info-val">Yenepoya University, Mangaluru</span>
+              </li>
+              <li>
+                <span class="info-label">Specialization</span>
+                <span class="info-val">AI/ML & Data Analytics</span>
+              </li>
+              <li>
+                <span class="info-label">Location</span>
+                <span class="info-val">[City/State Placeholder], India</span>
+              </li>
+              <li>
+                <span class="info-label">Status</span>
+                <span class="info-val highlight-val">Actively Seeking Opportunities</span>
+              </li>
+            </ul>
+
+            <div class="profile-social-row">
+              <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="Mohammed Mikhdad on GitHub (Placeholder)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="Mohammed Mikhdad on LinkedIn (Placeholder)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Story & Principles -->
+          <div class="about-content-col">
+            <div class="glass-panel text-panel reveal-item">
+              <h3 class="panel-heading">Academic Journey & Technical Mission</h3>
+              <p>
+                I am currently pursuing my <strong>Master of Computer Applications (MCA)</strong> at 
+                <strong>Yenepoya (Deemed to be University)</strong>. With an analytical mindset rooted in computing principles, 
+                I have immersed myself in modern Artificial Intelligence architectures, focusing on applied Deep Learning, 
+                Natural Language Processing, and robust Data Analytics.
+              </p>
+              <p>
+                My projects reflect an engineering commitment to practical utility: from developing convolutional models 
+                for medical diagnostic analysis, to engineering touchless human-computer interaction frameworks with OpenCV and MediaPipe, 
+                and crafting predictive systems for critical alert mechanisms like flood monitoring.
+              </p>
+              <p>
+                I prioritize algorithmic efficiency, clean data pipelines, interpretable machine learning models, 
+                and continuous learning. I am seeking roles where I can contribute to cutting-edge research, intelligent applications, 
+                and high-impact data-driven solutions.
+              </p>
+            </div>
+
+            <!-- Pillars / Core Values -->
+            <div class="pillars-grid reveal-item">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+                <h4>Model Interpretability</h4>
+                <p>Prioritizing explainable AI (XAI) such as Grad-CAM and feature importance over blind black-box architectures.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <h4>Robust Pipelines</h4>
+                <p>Ensuring rigorous data pre-processing, handling class imbalances, and systematic cross-validation.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </div>
+                <h4>Real-World Utility</h4>
+                <p>Building assistive technologies in healthcare, environmental disaster mitigation, and natural human interfaces.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-tag">02. Capabilities</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Competencies</span></h2>
+          <p class="section-subtitle">Proficiencies developed across postgraduate coursework, self-directed research, and practical implementations.</p>
+        </div>
+
+        <div class="skills-container">
+          <!-- Category 1: AI & Machine Learning -->
+          <div class="skill-category-card glass-panel reveal-item">
+            <div class="category-header">
+              <div class="category-icon-wrapper cv-glow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">AI & Machine Learning</h3>
+                <span class="category-count">Core Theoretical & Applied Models</span>
+              </div>
+            </div>
+            <div class="skills-tags-wrap">
+              <span class="skill-pill">Supervised Learning</span>
+              <span class="skill-pill">Unsupervised Clustering</span>
+              <span class="skill-pill">Scikit-learn</span>
+              <span class="skill-pill">Ensemble Methods</span>
+              <span class="skill-pill">Random Forests</span>
+              <span class="skill-pill">XGBoost & LightGBM</span>
+              <span class="skill-pill">Hyperparameter Tuning</span>
+              <span class="skill-pill">Cross-Validation</span>
+              <span class="skill-pill">Feature Engineering</span>
+              <span class="skill-pill">Model Evaluation (ROC/AUC)</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Deep Learning & NLP -->
+          <div class="skill-category-card glass-panel reveal-item">
+            <div class="category-header">
+              <div class="category-icon-wrapper dl-glow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M3 9h3v6H3zM18 9h3v6h-3z"></path>
+                  <path d="M6 12h3M15 12h3M9 6h6M9 18h6"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Deep Learning & NLP</h3>
+                <span class="category-count">Neural Architectures & Text Intelligence</span>
+              </div>
+            </div>
+            <div class="skills-tags-wrap">
+              <span class="skill-pill">PyTorch</span>
+              <span class="skill-pill">TensorFlow / Keras</span>
+              <span class="skill-pill">Convolutional Nets (CNNs)</span>
+              <span class="skill-pill">Transfer Learning</span>
+              <span class="skill-pill">RNNs / LSTMs</span>
+              <span class="skill-pill">NLTK & Text Processing</span>
+              <span class="skill-pill">TF-IDF Vectorization</span>
+              <span class="skill-pill">Cosine Similarity</span>
+              <span class="skill-pill">Hugging Face Basics</span>
+              <span class="skill-pill">Grad-CAM Visualizations</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Computer Vision & MediaPipe -->
+          <div class="skill-category-card glass-panel reveal-item">
+            <div class="category-header">
+              <div class="category-icon-wrapper eye-glow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Computer Vision</h3>
+                <span class="category-count">Real-time Vision & Landmark Tracking</span>
+              </div>
+            </div>
+            <div class="skills-tags-wrap">
+              <span class="skill-pill">OpenCV (cv2)</span>
+              <span class="skill-pill">Google MediaPipe</span>
+              <span class="skill-pill">21-Hand Landmark Detection</span>
+              <span class="skill-pill">Gesture Recognition</span>
+              <span class="skill-pill">Image Transformations</span>
+              <span class="skill-pill">Real-time Video Processing</span>
+              <span class="skill-pill">Medical Image Augmentation</span>
+              <span class="skill-pill">Contour & Edge Detection</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Data Analytics & Mathematics -->
+          <div class="skill-category-card glass-panel reveal-item">
+            <div class="category-header">
+              <div class="category-icon-wrapper da-glow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Data Analytics & Math</h3>
+                <span class="category-count">Statistical Modeling & EDA</span>
+              </div>
+            </div>
+            <div class="skills-tags-wrap">
+              <span class="skill-pill">NumPy</span>
+              <span class="skill-pill">Pandas</span>
+              <span class="skill-pill">Matplotlib</span>
+              <span class="skill-pill">Seaborn</span>
+              <span class="skill-pill">Exploratory Data Analysis (EDA)</span>
+              <span class="skill-pill">Statistical Hypothesis Testing</span>
+              <span class="skill-pill">Data Cleaning & Imputation</span>
+              <span class="skill-pill">SQL & Relational Databases</span>
+              <span class="skill-pill">Linear Algebra & Calculus</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Languages & Developer Tooling -->
+          <div class="skill-category-card glass-panel reveal-item">
+            <div class="category-header">
+              <div class="category-icon-wrapper tools-glow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Languages & Tooling</h3>
+                <span class="category-count">Programming & Environments</span>
+              </div>
+            </div>
+            <div class="skills-tags-wrap">
+              <span class="skill-pill">Python (Primary)</span>
+              <span class="skill-pill">C / C++</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">Bash & Linux CLI</span>
+              <span class="skill-pill">Git & GitHub</span>
+              <span class="skill-pill">Jupyter Notebooks / Google Colab</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Virtual Environments (venv/conda)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-tag">03. Implementations</span>
+          <h2 class="section-title">Featured <span class="gradient-text">AI/ML Projects</span></h2>
+          <p class="section-subtitle">Real-world systems highlighting computer vision, healthcare recommendation, disaster alerts, and machine learning pipelines.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-wrapper reveal-item" role="tablist" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (6)</button>
+          <button class="filter-btn" data-filter="vision" role="tab" aria-selected="false">Computer Vision & AI</button>
+          <button class="filter-btn" data-filter="health" role="tab" aria-selected="false">HealthTech & NLP</button>
+          <button class="filter-btn" data-filter="analytics" role="tab" aria-selected="false">Data Analytics</button>
+          <button class="filter-btn" data-filter="ml" role="tab" aria-selected="false">ML Predictions</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1: Medical Image Classification -->
+          <article class="project-card glass-panel" data-category="vision health" data-id="project-1">
+            <div class="project-card-header">
+              <div class="project-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <span class="project-badge">Deep Learning &bull; Computer Vision</span>
+            </div>
+            
+            <h3 class="project-title">AI-Based Medical Image Classification</h3>
+            
+            <p class="project-summary">
+              Automated diagnostic screening system utilizing deep Convolutional Neural Networks (CNN) with transfer learning to identify pathologies from medical scans with high sensitivity.
+            </p>
+
+            <div class="project-meta-pills">
+              <span class="meta-tag">PyTorch / TensorFlow</span>
+              <span class="meta-tag">CNN & Transfer Learning</span>
+              <span class="meta-tag">OpenCV</span>
+              <span class="meta-tag">Grad-CAM</span>
+            </div>
+
+            <div class="project-card-actions">
+              <button class="btn btn-sm btn-primary open-modal-btn" data-project="project-1" aria-haspopup="dialog">
+                <span>View Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+              <a href="https://github.com/your-username/ai-medical-image-classification" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository (Placeholder)" title="Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Medicine Recommendation System -->
+          <article class="project-card glass-panel" data-category="health ml" data-id="project-2">
+            <div class="project-card-header">
+              <div class="project-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                </svg>
+              </div>
+              <span class="project-badge">NLP &bull; Recommendation Engine</span>
+            </div>
+            
+            <h3 class="project-title">Medicine Recommendation System</h3>
+            
+            <p class="project-summary">
+              Intelligent healthcare assistant that extracts patient symptoms via natural language processing and recommends candidate medications with dosage guidance and precautions.
+            </p>
+
+            <div class="project-meta-pills">
+              <span class="meta-tag">Python & NLTK</span>
+              <span class="meta-tag">TF-IDF Vectorization</span>
+              <span class="meta-tag">Cosine Similarity</span>
+              <span class="meta-tag">Pandas</span>
+            </div>
+
+            <div class="project-card-actions">
+              <button class="btn btn-sm btn-primary open-modal-btn" data-project="project-2" aria-haspopup="dialog">
+                <span>View Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+              <a href="https://github.com/your-username/medicine-recommendation-system" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository (Placeholder)" title="Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Air Canvas using OpenCV and MediaPipe -->
+          <article class="project-card glass-panel" data-category="vision" data-id="project-3">
+            <div class="project-card-header">
+              <div class="project-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+              <span class="project-badge">Computer Vision &bull; Real-time HCI</span>
+            </div>
+            
+            <h3 class="project-title">Air Canvas using OpenCV and MediaPipe</h3>
+            
+            <p class="project-summary">
+              Touchless interactive digital canvas capturing 21 hand landmarks in real time via webcam to draw, switch colors, and clear strokes through intuitive hand gestures.
+            </p>
+
+            <div class="project-meta-pills">
+              <span class="meta-tag">Python</span>
+              <span class="meta-tag">OpenCV (cv2)</span>
+              <span class="meta-tag">Google MediaPipe</span>
+              <span class="meta-tag">NumPy Deque</span>
+            </div>
+
+            <div class="project-card-actions">
+              <button class="btn btn-sm btn-primary open-modal-btn" data-project="project-3" aria-haspopup="dialog">
+                <span>View Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+              <a href="https://github.com/your-username/air-canvas-opencv-mediapipe" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository (Placeholder)" title="Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Flood Detection and Alert System -->
+          <article class="project-card glass-panel" data-category="analytics ml" data-id="project-4">
+            <div class="project-card-header">
+              <div class="project-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                </svg>
+              </div>
+              <span class="project-badge">Predictive Analytics &bull; IoT/Alerts</span>
+            </div>
+            
+            <h3 class="project-title">Flood Detection and Alert System</h3>
+            
+            <p class="project-summary">
+              Environmental risk assessment model evaluating hydrological and meteorological variables (rainfall, water levels, soil moisture) to trigger early warning disaster notifications.
+            </p>
+
+            <div class="project-meta-pills">
+              <span class="meta-tag">Python & Scikit-learn</span>
+              <span class="meta-tag">XGBoost Classifier</span>
+              <span class="meta-tag">Time-Series EDA</span>
+              <span class="meta-tag">Alert Pipeline</span>
+            </div>
+
+            <div class="project-card-actions">
+              <button class="btn btn-sm btn-primary open-modal-btn" data-project="project-4" aria-haspopup="dialog">
+                <span>View Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+              <a href="https://github.com/your-username/flood-detection-alert-system" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository (Placeholder)" title="Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5: Data Analysis and Visualization -->
+          <article class="project-card glass-panel" data-category="analytics" data-id="project-5">
+            <div class="project-card-header">
+              <div class="project-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                  <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                </svg>
+              </div>
+              <span class="project-badge">Exploratory Data Analysis &bull; Insights</span>
+            </div>
+            
+            <h3 class="project-title">Data Analysis and Visualization</h3>
+            
+            <p class="project-summary">
+              Comprehensive statistical investigation and interactive dashboard suite translating complex multivariate datasets into actionable patterns and executive summaries.
+            </p>
+
+            <div class="project-meta-pills">
+              <span class="meta-tag">Pandas & NumPy</span>
+              <span class="meta-tag">Matplotlib & Seaborn</span>
+              <span class="meta-tag">Hypothesis Testing</span>
+              <span class="meta-tag">Visual Storytelling</span>
+            </div>
+
+            <div class="project-card-actions">
+              <button class="btn btn-sm btn-primary open-modal-btn" data-project="project-5" aria-haspopup="dialog">
+                <span>View Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+              <a href="https://github.com/your-username/data-analysis-and-visualization" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository (Placeholder)" title="Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 6: Machine Learning Prediction System -->
+          <article class="project-card glass-panel" data-category="ml" data-id="project-6">
+            <div class="project-card-header">
+              <div class="project-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2 17l10 5 10-5M2 12l10 5 10-5M2 7l10 5 10-5"></path>
+                </svg>
+              </div>
+              <span class="project-badge">Supervised ML &bull; Pipeline</span>
+            </div>
+            
+            <h3 class="project-title">Machine Learning Prediction System</h3>
+            
+            <p class="project-summary">
+              Production-oriented predictive intelligence pipeline featuring automated feature preprocessing, multi-model benchmarking, and serialized deployment artifacts.
+            </p>
+
+            <div class="project-meta-pills">
+              <span class="meta-tag">Scikit-learn</span>
+              <span class="meta-tag">Random Forest & SVM</span>
+              <span class="meta-tag">Pipeline API</span>
+              <span class="meta-tag">Joblib Serialization</span>
+            </div>
+
+            <div class="project-card-actions">
+              <button class="btn btn-sm btn-primary open-modal-btn" data-project="project-6" aria-haspopup="dialog">
+                <span>View Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+              <a href="https://github.com/your-username/machine-learning-prediction-system" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository (Placeholder)" title="Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Journey Timeline Section -->
+    <section class="section journey-section" id="experience">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-tag">04. Milestones</span>
+          <h2 class="section-title">Education & <span class="gradient-text">Academic Timeline</span></h2>
+          <p class="section-subtitle">Academic foundations, hands-on training, and ongoing technical development.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1: MCA -->
+          <div class="timeline-item reveal-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date-badge">2024 &ndash; 2026 (Expected)</div>
+              <h3 class="timeline-title">Master of Computer Applications (MCA)</h3>
+              <h4 class="timeline-subtitle">Yenepoya (Deemed to be University) &bull; Mangaluru, Karnataka</h4>
+              <p class="timeline-desc">
+                Specializing in Artificial Intelligence, Machine Learning, and Big Data Analytics. 
+                Actively engineering end-to-end coursework projects in deep neural networks, computer vision, and applied statistical algorithms.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">AI & Deep Learning</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Data Mining & Analytics</span>
+                <span class="tag">Advanced Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Bachelor's Degree -->
+          <div class="timeline-item reveal-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date-badge">[2021 &ndash; 2024 Placeholder]</div>
+              <h3 class="timeline-title">Bachelor of Computer Applications (BCA) / Relevant Degree</h3>
+              <h4 class="timeline-subtitle">[University / College Name Placeholder] &bull; [Location Placeholder]</h4>
+              <p class="timeline-desc">
+                Built foundational knowledge in core computing: Object-Oriented Programming (Java/C++), Relational Database Management Systems (RDBMS), Data Structures & Algorithms, and Operating Systems.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Data Structures</span>
+                <span class="tag">Database Systems</span>
+                <span class="tag">Software Engineering</span>
+                <span class="tag">Web Technologies</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Internship / Practical Experience -->
+          <div class="timeline-item reveal-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date-badge">[Dates Placeholder, e.g., Summer 2025]</div>
+              <h3 class="timeline-title">AI / Machine Learning Intern [Role Placeholder]</h3>
+              <h4 class="timeline-subtitle">[Organization / Company Name Placeholder] &bull; [Location / Remote]</h4>
+              <p class="timeline-desc">
+                <em>(Editable Experience Placeholder)</em> Contributed to data preprocessing pipelines, exploratory exploratory data analysis, and baseline classification models. Assisted senior engineers in benchmarking machine learning workflows.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Data Cleaning</span>
+                <span class="tag">Model Validation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Public GitHub API Section -->
+    <section class="section github-section" id="github">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-tag">05. Open Source</span>
+          <h2 class="section-title">GitHub <span class="gradient-text">Activity & Repositories</span></h2>
+          <p class="section-subtitle">Real-time repository feed powered by the public GitHub REST API with graceful offline fallback.</p>
+        </div>
+
+        <div class="github-status-card glass-panel reveal-item">
+          <div class="github-header-row">
+            <div class="github-profile-brief">
+              <div class="github-avatar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="github-user-name" id="gh-user-name">Mohammed Mikhdad</h3>
+                <span class="github-user-handle" id="gh-user-handle">@your-username (Configurable in script.js)</span>
+              </div>
+            </div>
+            
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" id="gh-profile-link">
+              <span>View GitHub Profile</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Repositories Feed Container -->
+          <div class="github-repos-grid" id="github-repos-container" aria-live="polite">
+            <!-- Dynamically injected via script.js -->
+            <div class="repo-loading-card">
+              <div class="spinner" aria-hidden="true"></div>
+              <span>Connecting to GitHub API...</span>
+            </div>
+          </div>
+
+          <div class="github-note">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span>Tip: Update <code>GITHUB_USERNAME</code> in <code>script.js</code> to link your live GitHub account. In case of API rate limits, curated project fallback cards are shown automatically.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-tag">06. Connections</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Collaborate</span></h2>
+          <p class="section-subtitle">Interested in discussing AI research, internships, machine learning projects, or data consulting? Feel free to reach out.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels Info -->
+          <div class="contact-info-col reveal-item">
+            <div class="glass-panel contact-card">
+              <h3 class="contact-card-title">Direct Inquiries</h3>
+              <p class="contact-card-text">
+                Whether you have an internship opportunity, an open-source collaboration proposal, or want to discuss machine learning applications, my inbox is open.
+              </p>
+
+              <div class="contact-methods">
+                <div class="contact-method-item">
+                  <div class="method-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="method-label">Email Address</span>
+                    <a href="mailto:mikhdad.placeholder@example.com" class="method-value" id="contact-email-link">mikhdad.placeholder@example.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-method-item">
+                  <div class="method-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="7" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="method-label">Academic Campus</span>
+                    <span class="method-value">Yenepoya University, Mangaluru, Karnataka</span>
+                  </div>
+                </div>
+
+                <div class="contact-method-item">
+                  <div class="method-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="method-label">Response Time</span>
+                    <span class="method-value">Typically within 24&ndash;48 hours</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-links-block">
+                <span class="socials-heading">Professional Profiles:</span>
+                <div class="social-icon-row">
+                  <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="social-link-btn" aria-label="GitHub Profile (Placeholder)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                  </a>
+                  <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" class="social-link-btn" aria-label="LinkedIn Profile (Placeholder)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                  </a>
+                  <a href="https://kaggle.com/your-username" target="_blank" rel="noopener noreferrer" class="social-link-btn" aria-label="Kaggle Profile (Placeholder)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M4 4v16"></path>
+                      <path d="M18 4l-8.5 8 8.5 8"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-col reveal-item">
+            <div class="glass-panel form-panel">
+              <h3 class="form-title">Send a Message</h3>
+              <p class="form-instruction">
+                Fill out the form below. Client-side validation is active and will generate a ready-to-send draft in your email client.
+              </p>
+
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="sender-name">Your Full Name <span class="required">*</span></label>
+                  <input type="text" id="sender-name" name="name" class="form-control" placeholder="e.g. Dr. Alan Turing" required autocomplete="name">
+                  <span class="field-error" id="name-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="sender-email" name="email" class="form-control" placeholder="e.g. alan@example.com" required autocomplete="email">
+                  <span class="field-error" id="email-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-subject">Subject <span class="required">*</span></label>
+                  <input type="text" id="sender-subject" name="subject" class="form-control" placeholder="e.g. AI Internship / Collaboration Opportunity" required>
+                  <span class="field-error" id="subject-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-message">Message <span class="required">*</span></label>
+                  <textarea id="sender-message" name="message" class="form-control" rows="5" placeholder="Share details about the project, role, or conversation topic..." required minlength="15"></textarea>
+                  <div class="form-meta-row">
+                    <span class="field-error" id="message-error" aria-live="polite"></span>
+                    <span class="char-counter" id="message-counter">0 / 500</span>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                  <span>Send Message via Mailto</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+
+              <!-- Form Feedback Banner -->
+              <div id="form-alert" class="form-alert" role="alert" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo" aria-label="Back to top">
+          <span class="logo-badge">MM</span>
+          <span class="logo-text">Mohammed <span class="accent-text">Mikhdad</span></span>
+        </a>
+        <p class="footer-tagline">
+          MCA Scholar @ Yenepoya University &bull; Specialized in AI/ML, Deep Learning, NLP & Data Analytics.
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <ul class="footer-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Timeline</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright">
+          &copy; <span id="current-year">2026</span> Mohammed Mikhdad. Crafted with pure HTML5, CSS3, & Vanilla JS.
+        </p>
+        <p class="footer-disclaimer">
+          No external frameworks. Ready for GitHub Pages.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal (Accessible Dialog) -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title" aria-hidden="true">
+    <div class="modal-container glass-panel">
+      <!-- Close Button -->
+      <button class="icon-btn modal-close-btn" id="modal-close-btn" aria-label="Close project details modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-body">
+        <div class="modal-header-meta">
+          <span class="modal-badge" id="modal-project-category">Category</span>
+          <h2 class="modal-title" id="modal-project-title">Project Title</h2>
+        </div>
+
+        <div class="modal-content-scroll">
+          <section class="modal-section">
+            <h3 class="modal-subheading">Project Overview</h3>
+            <p id="modal-project-desc">Detailed project description goes here.</p>
+          </section>
+
+          <section class="modal-section">
+            <h3 class="modal-subheading">Problem Statement & Objective</h3>
+            <p id="modal-project-problem">Detailed problem statement.</p>
+          </section>
+
+          <section class="modal-section">
+            <h3 class="modal-subheading">Methodology & Technical Architecture</h3>
+            <div id="modal-project-methodology">Methodology details.</div>
+          </section>
+
+          <section class="modal-section">
+            <h3 class="modal-subheading">Key Results & Performance Metrics</h3>
+            <ul id="modal-project-metrics" class="modal-bullet-list"></ul>
+          </section>
+
+          <section class="modal-section">
+            <h3 class="modal-subheading">Technologies & Libraries</h3>
+            <div id="modal-project-tech" class="modal-tech-pills"></div>
+          </section>
+        </div>
+
+        <div class="modal-footer-actions">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="modal-github-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-demo-link">
+            <span>Live Demo / Documentation</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Preview Modal -->
+  <div class="modal-backdrop" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title" aria-hidden="true">
+    <div class="modal-container glass-panel resume-modal-container">
+      <button class="icon-btn modal-close-btn" id="resume-close-btn" aria-label="Close resume modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-body">
+        <div class="modal-header-meta">
+          <span class="modal-badge">Curriculum Vitae</span>
+          <h2 class="modal-title" id="resume-modal-title">Mohammed Mikhdad &bull; Resume</h2>
+        </div>
+
+        <div class="resume-preview-notice glass-panel">
+          <div class="notice-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+          </div>
+          <h3>Resume Document Ready for Customization</h3>
+          <p>
+            Place your official resume PDF as <code>assets/Mohammed_Mikhdad_Resume.pdf</code>. 
+            Clicking download will retrieve this file directly.
+          </p>
+          <div class="resume-modal-actions">
+            <a href="assets/Mohammed_Mikhdad_Resume.pdf" download="Mohammed_Mikhdad_Resume.pdf" class="btn btn-primary" id="resume-download-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download PDF File</span>
+            </a>
+            <button class="btn btn-outline" id="resume-close-action">Close Window</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top of page" title="Back to top">
+    <svg class="progress-ring" width="46" height="46" viewBox="0 0 46 46" aria-hidden="true">
+      <circle class="progress-ring-bg" cx="23" cy="23" r="20" fill="none" stroke-width="3"/>
+      <circle id="progress-ring-circle" class="progress-ring-fill" cx="23" cy="23" r="20" fill="none" stroke-width="3"/>
+    </svg>
+    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Notification Toast Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
